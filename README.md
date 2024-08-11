@@ -1,7 +1,7 @@
 # Lua Switch Case
 Simple and efficient switch case approach in lua.
 
-<h1>Explenation</h1>
+<h2>Explenation</h2>
 <p>In short, a switch case is a better and faster version of nested if-else statements. They take a value, match it with a case that has the same value and execute the case. If the value doesn't match any case, it exectues the "default" case. In addition, if the switch case isn't broken, it falls through to the next case and executes it.</p>
 
 <p>In a higher level (Java) this would be:</p>
@@ -21,7 +21,7 @@ case 5:
 ```
 <p>In a lower level, they take an integer value, index a constant jump table (only initialized once in the program) and then jump to the corresponding instruction address. This indexing is done in a constant time complexity meaning every case takes the same time to be matched.</p>
 
-<h1>Lua Implementation</h1>
+<h2>Lua Implementation</h2>
 <p>The most similar approach in Lua (efficiency wise) is initializing a constant table with functions as values and handle fall-throughs recursively:</p>
 
 ```lua
