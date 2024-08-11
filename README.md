@@ -51,5 +51,5 @@ cases = {
 	end,
 }
 
-doTableSwitch(5,cases) 
+doTableSwitch(5,cases) -- do the switch case
 ```
