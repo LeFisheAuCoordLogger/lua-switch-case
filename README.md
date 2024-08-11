@@ -1,4 +1,4 @@
-# lua-switch-case
+# Lua Switch Case
 Simple and efficient switch case approach in lua.
 
 <h1>Explenation</h1>
