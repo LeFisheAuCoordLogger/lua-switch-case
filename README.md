@@ -27,11 +27,10 @@ case 5:
 ```lua
 -- function that takes a value and a cases table and executes the matching case
 function doTableSwitch(value,cases)
-	local case = cases[value];
 	local function FallThrough(case)
 		return cases[case](FallThrough);
 	end
-	return (case or cases.default)(FallThrough);
+	return (cases[value] or cases.default)(FallThrough);
 end
 
 -- cases table
