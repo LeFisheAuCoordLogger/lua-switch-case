@@ -36,6 +36,7 @@ end
 -- cases table
 cases = {
 	[0] = function(FallThrough)
+		print("Case 0");
 		return FallThrough(1); -- explicitly fall through to the next case (case 1)
 	end,
 	[1] = function(FallThrough)
@@ -50,5 +51,5 @@ cases = {
 	end,
 }
 
-doTableSwitch(5,cases) -- do the switch case
+doTableSwitch(5,cases); -- do the switch case
 ```
