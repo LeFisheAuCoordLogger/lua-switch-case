@@ -37,10 +37,10 @@ end
 -- cases table
 cases = {
 	[0] = function(FallThrough)
-		return FallThrough(1);
+		return FallThrough(1); -- explicitly fall through to the next case (case 1)
 	end,
 	[1] = function(FallThrough)
-		print("Case 0 or 1");
+		print("Case 0 or 1"); -- no explicit fall through here so break
 	end,
 	default = function(FallThrough)
 		print("Default case");
